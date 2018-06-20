@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myWeather</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/weather-icons-master/css/weather-icons.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+    <div class="body" id="body">
+        <div class="container nav-bar">
+            <div class="title">
+                <h1>myWeather</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search.." id="search-bar" onfocus="this.value=''" @keyup.enter="searchCity()">
+                <div><span class="glyphicon glyphicon-search lens-icon" @click="searchCity()"></span></div>
+            </div>
+        </div>
+        <div class="container div-info">
+            <div class="waiting-div" v-if="list == undefined || list.length == 0">
+                <p>Please look for a city</p>
+                <div class="icons">
+                    <i class="wi wi-rain"></i>
+                    <i class="wi wi-cloud"></i>
+                    <i class="wi wi-snow"></i>
+                    <i class="wi wi-day-sunny"></i>
+                </div>
+            </div>
+            <div class="not-waiting-div" v-else>
+                <div class="main-info" v-if="currentPage == 0">
+                    <button class="page-btn toright" @click="moveToLeft()">
+                    <img src="style/images/arrow-icon.png" alt="arrow left icon">
+                    </button>
+                    <div class="content">
+                        <div class="city-name">
+                            <h2>{{mainInfo.cityName}}</h2>
+                            <h4 class="todays-date">{{mainInfo.date}}</h4>
+                            <h4 class="main-info-description">{{mainInfo.description}}</h4>
+                            <h4>{{mainInfo.maxTemp}}º/{{mainInfo.minTemp}}º</h4>
+                            <div class="humidity-div">
+                                <p>{{mainInfo.humidity}}</p>
+                                <i class="wi wi-humidity"></i>
+                            </div>
+                            <div class="wind-info">{{mainInfo.wind}} m/s</div>
+                        </div>
+                        <div class="degress">
+                            <i :class="mainInfo.weather"></i>
+                            <h1>{{mainInfo.temp}}º</h1>
+                        </div>
+                    </div>
+                    <button class="page-btn toleft" @click="moveToRight()">
+                    <img src="style/images/arrow-icon.png" alt="arrow left icon">
+                    </button>
+                </div>
+                <div class="extra-info" v-if="currentPage == 1">
+                    <button class="page-btn toright" @click="moveToLeft()">
+                    <img src="style/images/arrow-icon.png" alt="arrow left icon">
+                    </button>
+                    <div class="content">
+                        <h3>Next 24 hours</h3>
+                        <div>
+                            <div class="every-time" v-for="nextHour in next24Hours">
+                                <div class="border-bottom">{{nextHour.time}}</div>
+                                <div class="border-bottom"><i :class="nextHour.icon"></i></div>
+                                <div class="border-bottom">{{nextHour.temp}}º</div>
+                                <div class="border-bottom">{{nextHour.maxTemp}}º / {{nextHour.minTemp}}º</div>
+                                <div>{{nextHour.wind}} m/s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="page-btn toleft" @click="moveToRight()">
+                    <img src="style/images/arrow-icon.png" alt="arrow left icon">
+                    </button>
+                </div>
+                <div class="next-info" v-if="currentPage == -1">
+                    <button class="page-btn toright" @click="moveToLeft()">
+                    <img src="style/images/arrow-icon.png" alt="arrow left icon">
+                    </button>
+                    <div class="content">
+                        <h3>Next 5 days</h3>
+                        <div>
+                            <div class="next-days" v-for="day in nextDays">
+                                <div class="day-name">
+                                    {{day.day}}
+                                </div>
+                                <div class="avg-temp"> {{day.avgTemp}}º</div>
+                                <div class="day-weather">
+                                    <i :class="day.weather"></i>
+                                </div>
+                                <div class="max-min-temp">
+                                    {{day.avgMaxTemp}}º / {{day.avgMinTemp}}º
+                                </div>
+                                <div>
+                                <div class="avg-humi"> {{day.avgHumidity}} <i class="wi wi-humidity"></i> </div>
+                                </div>
+                                <div class="avg-wind"> {{day.avgWind}} m/s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="page-btn toleft" @click="moveToRight()">
+                    <img src="style/images/arrow-icon.png" alt="arrow left icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Vue.js-->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!--    My JavaScript-->
+    <script src="script/main-js.js"></script>
+</body>
+
+</html>
