@@ -58,7 +58,7 @@ var app = new Vue({
             var weekDay = this.setWeekDay(date.split(" ")[0]);
             var month = date.split(" ")[1] + " " + date.split(" ")[2]
             var year = date.split(" ")[3]
-            var day = weekDay + " "+ month +" "+ year;
+            var day = weekDay + " " + month + " " + year;
             mainInfoObject["cityName"] = data.city.name;
             mainInfoObject["temp"] = (list[0].main.temp - 273.15).toString().split(".")[0];
             mainInfoObject["maxTemp"] = (list[0].main.temp_max - 273.15).toString().split(".")[0];
@@ -124,18 +124,18 @@ var app = new Vue({
             var weather = list[0].weather[0].main;
             var imageUrl = "";
             if (weather == "Rain") {
-                imageUrl = "rain.jpg";
+                imageUrl = "rain";
             }
             if (weather == "Clouds") {
-                imageUrl = "cloud.jpg"
+                imageUrl = "clouds"
             }
             if (weather == "Snow") {
-                imageUrl = "snow.jpg";
+                imageUrl = "snow";
             }
             if (weather == "Clear") {
-                imageUrl = "sun.jpg";
+                imageUrl = "sun";
             }
-            document.getElementById('body').style.backgroundImage = 'url(/style/images/' + imageUrl + ')';
+            document.getElementById('body').setAttribute("class", "body " + imageUrl);
         },
         setWeatherIcon: function (weather) {
             var icon;

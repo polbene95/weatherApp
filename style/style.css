@@ -1,19 +1,19 @@
-/*.body {background-image: url(images/barcelona.jpg);background-repeat: no-repeat;background-size: cover;height: 100vh;padding: 30px 0;font-family: 'Grand Hotel', cursive;display: grid;grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}.container {border-radius: 25px;background-color: rgba(255, 255, 255, 0.7);min-width: 90%;}.nav-bar {grid-row-start: 1;display: flex;justify-content: space-between;}.title {width: 50%;display: flex;justify-content: flex-start;align-items: flex-end;}.title h1 {font-size: 4rem;}.search-container {width: 50%;display: flex;justify-content: flex-end;align-items: flex-end;padding-bottom: 10px;}.search-container button {background-color: rgba(255, 255, 255, 0);}#search-bar {border-radius: 25px;padding: 0 10px;}.div-info {grid-row-start: 2;grid-row-end: 11;margin: 30px auto;display: flex;}.main-info {width: 100%;display: flex;flex-direction: column;}*/
+.sun {
+    background-image: url(images/sun.jpg);
+}
+.clouds {
+    background-image: url(images/cloud.jpg);
+}
+.rain {
+    background-image: url(images/rain.jpg);
+}
+.snow {
+    background-image: url(images/snow.jpg);
+}
 
-
-/*.extra-info {width: 100%;display: flex;justify-content: space-around;}thead {font-weight: bold;}.degress {display: flex;justify-content: center;align-items: center;width: 100%;height: 200px;}.degress h1 {font-size: 170px;}.city-name {width: 100%;height: 100%;}.today-info {width: 100%;display: flex;justify-content: space-around;}.city-name h2 {width: 100%;font-size: 70px;}.city-name h4 {font-size: 30px;}.humidity-div {display: flex;font-size: 30px;width: 11%;padding-left: 10px;align-items: center;justify-content: center;}.humidity-div p {margin: 0;margin-right: 2px;}.extra-info table {width: 90%;display: none;}.extra-info table td {width: 20%;padding-left: 0px;}.every-time {width: 11%;}.every-time-div {display: flex;justify-content: center;align-items: center;height: 50px;font-weight: bold;}.last-div {border: none;}.hide-in-mobil {display: none;}.waiting-div {display: flex;justify-content: center;align-items: center;flex-direction: column;font-size: 45px;width: 100%;}.waiting-div div {width: 100%;display: flex;justify-content: space-around;}.not-waiting-div {width: 100%;}*/
-
-
-/*@media only screen and (min-width: 570px) {.body {background-repeat: no-repeat;background-size: cover;height: 100vh;padding: 30px 0;font-family: 'Grand Hotel', cursive;display: grid;grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}.container {border-radius: 25px;background-color: rgba(255, 255, 255, 0.7);min-width: 90%;}.nav-bar {grid-row-start: 1;display: flex;justify-content: space-between;}.title {width: 50%;display: flex;justify-content: flex-start;align-items: flex-end;}.title h1 {font-size: 5rem;}.search-container {width: 50%;display: flex;justify-content: flex-end;align-items: flex-end;padding-bottom: 10px;}.search-container button {background-color: rgba(255, 255, 255, 0);}#search-bar {border-radius: 25px;padding: 0 10px;}.div-info {grid-row-start: 2;grid-row-end: 11;margin: 30px auto;display: flex;align-items: center;justify-content: center;}.main-info {width: 100%;display: flex;flex-direction: row;}.extra-info {width: 100%;display: flex;justify-content: space-around;}thead {font-weight: bold;}.degress {width: 100%;height: 200px;}.degress h1 {font-size: 200px;}.city-name {width: 100%;}.today-info {width: 100%;display: flex;}.city-name h2 {width: 100%;font-size: 80px;}.city-name h4 {font-size: 30px;padding-left: 10px;}.humidity-div {display: flex;font-size: 30px;width: 11%;padding-left: 10px;align-items: center;justify-content: center;}.humidity-div p {margin: 0;margin-right: 2px;}.extra-info table {width: 90%;display: none;}.extra-info table td {width: 20%;padding-left: 0px;}.every-time {width: 11%;border-right: 1px solid rgba(255, 255, 255, 0.9)}.every-time-div {display: flex;justify-content: center;align-items: center;height: 50px;font-weight: bold;}.last-div {border: none;}.waiting-div {display: flex;justify-content: center;align-items: center;flex-direction: column;font-size: 70px;width: 100%;}.waiting-div div {width: 100%;display: flex;justify-content: space-around;}.not-waiting-div {width: 100%;}}*/
-
-
-/*@media only screen and (min-width: 992px) {*/
-
-
-/*General Rules*/
+/*
 
 .body {
-    background-image: url(images/sun.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -29,9 +29,6 @@
     background-color: rgba(255, 255, 255, 0.7);
     min-width: 90%;
 }
-
-
-/*Search Bar and Header Rules*/
 
 .nav-bar {
     grid-row-start: 1;
@@ -65,151 +62,76 @@
 #search-bar {
     border-radius: 25px;
     padding: 0 10px;
-    width: 70%;
-    font-size: 2.3rem;
 }
-
-.lens-icon {
-    font-size: 2.3rem;
-}
-
-
-/*-------------------------------------------Section---------------------------------------------------*/
 
 .div-info {
     grid-row-start: 2;
     grid-row-end: 11;
     margin: 30px auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.main-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
-/*Sectio General Rules*/
-
-.main-info,
-.next-info,
 .extra-info {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
-.content {
-    width: 90%;
-    display: flex;
-}
-
-.page-btn {
-    width: 5%;
-    background-color: transparent;
-    border-color: transparent;
-    text-transform: uppercase;
-}
-
-.page-btn > img {
-    width: 100%;
-}
-
-.toright {
-    transform: rotateY(180deg)
-}
-
-
-/*Main Info Rules*/
 
 thead {
     font-weight: bold;
 }
 
 .degress {
-    width: 30%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    font-size: 15rem;
-}
-.degress > h1 {
-    font-size: 15rem;
+    width: 100%;
+    height: 200px;
 }
 
-.main-weather-icon {
-    display: none;
+.degress h1 {
+    font-size: 170px;
 }
+
 .city-name {
-    width: 70%;
+    width: 100%;
+    height: 100%;
+}
+
+.today-info {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .city-name h2 {
-    font-size: 10rem;
-    word-wrap: break-word;
+    width: 100%;
+    font-size: 70px;
 }
 
 .city-name h4 {
-    font-size: 4rem;
-    padding-left: 10px;
-}
-
-.main-info-description {
-    font-size: 6rem;
+    font-size: 30px;
 }
 
 .humidity-div {
     display: flex;
-    width: fit-content;
+    font-size: 30px;
+    width: 11%;
     padding-left: 10px;
-    font-size: 4rem;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .humidity-div p {
     margin: 0;
     margin-right: 2px;
-}
-
-.today-weather {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10rem;
-}
-
-.wind-info {
-     display: flex;
-    width: fit-content;
-    padding-left: 10px;
-    font-size: 4rem;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*Extra Info Div Rules*/
-
-.extra-info>.content {
-    flex-direction: column;
-    align-items: center;
-}
-
-.extra-info>.content>div {
-    width: 100%;
-    display: flex;
-    height: 90%;
-}
-
-.extra-info>.content>h3 {
-    font-size: 5rem;
-    font-weight: bold;
 }
 
 .extra-info table {
@@ -224,126 +146,551 @@ thead {
 
 .every-time {
     width: 11%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
-    word-break: break-word;
-    font-weight: bold;
-}
-.every-time > div {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .every-time-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
-    font-size: 2.7rem;
-}
-
-.border-bottom {
-    border-bottom: 1px solid rgba(0,0,0);
-}
-
-/*Next Days Info */
-
-.next-info>.content {
-    display: flex;
-    flex-direction: column;
-}
-
-.next-info>.content>div {
-    width: 100%;
-    display: flex;
-    height: 90%;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.next-info>.content>h3 {
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.next-days {
-    width: 100%;
-    display: flex;
-    min-height: 16%;
-}
-
-.next-days > div {
-    width: 16%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 3rem;
-
-}
-
-.day-name {
-    font-size: 3rem;
+    height: 50px;
     font-weight: bold;
 }
 
-.max-min-temp {
-    font-size: 3rem;
-    padding-left: 5%;
+.last-div {
+    border: none;
 }
 
-.day-weather {
-    font-size: 4rem;
-    display: flex;
-    justify-content: flex-end;
+.hide-in-mobil {
+    display: none;
 }
-
-.avg-temp {
-    font-size: 3rem;
-}
-
-.avg-humi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*Waiting and Not Wating Div*/
 
 .waiting-div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 70px;
+    font-size: 45px;
     width: 100%;
-    word-wrap: break-word;
-}
-
-.waiting-div p {
-    word-wrap: break-word;
 }
 
 .waiting-div div {
     width: 100%;
     display: flex;
-    word-wrap: break-word;
     justify-content: space-around;
 }
 
 .not-waiting-div {
     width: 100%;
-    height: 100%;
 }
+
+
+@media only screen and (min-width: 570px) {
+    .body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        padding: 30px 0;
+        font-family: 'Grand Hotel', cursive;
+        display: grid;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    }
+
+    .container {
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.7);
+        min-width: 90%;
+    }
+
+    .nav-bar {
+        grid-row-start: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .title h1 {
+        font-size: 5rem;
+    }
+
+    .search-container {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 10px;
+    }
+
+    .search-container button {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #search-bar {
+        border-radius: 25px;
+        padding: 0 10px;
+    }
+
+    .div-info {
+        grid-row-start: 2;
+        grid-row-end: 11;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .extra-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    thead {
+        font-weight: bold;
+    }
+
+    .degress {
+        width: 100%;
+        height: 200px;
+    }
+
+    .degress h1 {
+        font-size: 200px;
+    }
+
+    .city-name {
+        width: 100%;
+    }
+
+    .today-info {
+        width: 100%;
+        display: flex;
+    }
+
+    .city-name h2 {
+        width: 100%;
+        font-size: 80px;
+    }
+
+    .city-name h4 {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    .humidity-div {
+        display: flex;
+        font-size: 30px;
+        width: 11%;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .humidity-div p {
+        margin: 0;
+        margin-right: 2px;
+    }
+
+    .extra-info table {
+        width: 90%;
+        display: none;
+    }
+
+    .extra-info table td {
+        width: 20%;
+        padding-left: 0px;
+    }
+
+    .every-time {
+        width: 11%;
+        border-right: 1px solid rgba(255, 255, 255, 0.9)
+    }
+
+    .every-time-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-weight: bold;
+    }
+
+    .last-div {
+        border: none;
+    }
+
+    .waiting-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 70px;
+        width: 100%;
+    }
+
+    .waiting-div div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .not-waiting-div {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+*/
+
+
+    /*General Rules*/
+
+    .body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        padding: 30px 0;
+        font-family: 'Grand Hotel', cursive;
+        display: grid;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    }
+
+    .container {
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.7);
+        min-width: 90%;
+    }
+
+
+    /*Search Bar and Header Rules*/
+
+    .nav-bar {
+        grid-row-start: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .search-container {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 10px;
+    }
+
+    .search-container button {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #search-bar {
+        border-radius: 25px;
+        padding: 0 10px;
+        width: 70%;
+        font-size: 2.3rem;
+    }
+
+    .lens-icon {
+        font-size: 2.3rem;
+    }
+
+
+    /*-------------------------------------------Section---------------------------------------------------*/
+
+    .div-info {
+        grid-row-start: 2;
+        grid-row-end: 11;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*Sectio General Rules*/
+
+    .main-info,
+    .next-info,
+    .extra-info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+    }
+
+    .page-btn {
+        width: 5%;
+        background-color: transparent;
+        border-color: transparent;
+        text-transform: uppercase;
+    }
+
+    .page-btn > img {
+        width: 100%;
+    }
+
+    .toright {
+        transform: rotateY(180deg)
+    }
+
+
+    /*Main Info Rules*/
+
+    thead {
+        font-weight: bold;
+    }
+
+    .degress {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15rem;
+    }
+
+    .degress > h1 {
+        font-size: 15rem;
+    }
+
+    .main-weather-icon {
+        display: none;
+    }
+
+    .city-name {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .city-name h2 {
+        font-size: 10rem;
+        word-wrap: break-word;
+    }
+
+    .city-name h4 {
+        font-size: 4rem;
+        padding-left: 10px;
+    }
+
+    .main-info-description {
+        font-size: 6rem;
+    }
+
+    .humidity-div {
+        display: flex;
+        width: fit-content;
+        padding-left: 10px;
+        font-size: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .humidity-div p {
+        margin: 0;
+        margin-right: 2px;
+    }
+
+    .today-weather {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10rem;
+    }
+
+    .wind-info {
+        display: flex;
+        width: fit-content;
+        padding-left: 10px;
+        font-size: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*Extra Info Div Rules*/
+
+    .extra-info > .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .extra-info > .content > div {
+        width: 100%;
+        display: flex;
+        height: 90%;
+    }
+
+    .extra-info > .content > h3 {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    .extra-info table {
+        width: 90%;
+        display: none;
+    }
+
+    .extra-info table td {
+        width: 20%;
+        padding-left: 0px;
+    }
+
+    .every-time {
+        width: 11%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2rem;
+        word-break: break-word;
+        font-weight: bold;
+    }
+
+    .every-time > div {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .every-time-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        font-size: 2.7rem;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid rgba(0, 0, 0);
+    }
+
+    /*Next Days Info */
+
+    .next-info > .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .next-info > .content > div {
+        width: 100%;
+        display: flex;
+        height: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .next-info > .content > h3 {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .next-days {
+        width: 100%;
+        display: flex;
+        min-height: 16%;
+    }
+
+    .next-days > div {
+        width: 16%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 3rem;
+
+    }
+
+    .day-name {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .max-min-temp {
+        font-size: 3rem;
+        padding-left: 5%;
+    }
+
+    .day-weather {
+        font-size: 4rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .avg-temp {
+        font-size: 3rem;
+    }
+
+    .avg-humi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*Waiting and Not Wating Div*/
+
+    .waiting-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 70px;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .waiting-div p {
+        word-wrap: break-word;
+    }
+
+    .waiting-div div {
+        width: 100%;
+        display: flex;
+        word-wrap: break-word;
+        justify-content: space-around;
+    }
+
+    .not-waiting-div {
+        width: 100%;
+        height: 100%;
+    }
 
 
 /*}*/
